@@ -5,7 +5,7 @@ import RotatingSubtitle from '@/components/RotatingSubtitle';
 
 export default function HomePage() {
   return (
-    <div className="space-y-20 relative">
+    <div className="space-y-15 relative">
       <MatrixRain />
       {/* Hero */}
       <section id="home" className="space-y-6 min-h-screen scroll-mt-24 flex flex-col justify-center">
@@ -15,6 +15,9 @@ export default function HomePage() {
           </a>
           <a href="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/test.yml" target="_blank" rel="noreferrer">
             <img src="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/test.yml/badge.svg" alt="Run Tests" />
+          </a>
+          <a href="https://codecov.io/github/sum35h/sumesh-pradhan-site" target="_blank" rel="noreferrer">
+            <img src="https://codecov.io/github/sum35h/sumesh-pradhan-site/graph/badge.svg?token=BLWAWY7O8C" alt="Code Coverage" />
           </a>
         </div>
         
