@@ -19,6 +19,9 @@ export default function HomePage() {
           <a href="https://codecov.io/github/sum35h/sumesh-pradhan-site" target="_blank" rel="noreferrer">
             <img src="https://codecov.io/github/sum35h/sumesh-pradhan-site/graph/badge.svg?token=BLWAWY7O8C" alt="Code Coverage" />
           </a>
+          <a href="https://snyk.io/test/github/sum35h/sumesh-pradhan-site?targetFile=package.json" target="_blank" rel="noreferrer">
+            <img src="https://snyk.io/test/github/sum35h/sumesh-pradhan-site/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" />
+          </a>
         </div>
         
         <h1 className="text-4xl font-bold flex items-center gap-4">
