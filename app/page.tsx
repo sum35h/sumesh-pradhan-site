@@ -9,6 +9,15 @@ export default function HomePage() {
       <MatrixRain />
       {/* Hero */}
       <section id="home" className="space-y-6 min-h-screen scroll-mt-24 flex flex-col justify-center">
+        <div className="flex flex-wrap gap-3 items-center mb-4">
+          <a href="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/deploy.yml" target="_blank" rel="noreferrer">
+            <img src="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/deploy.yml/badge.svg" alt="Build and Deploy" />
+          </a>
+          <a href="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/test.yml" target="_blank" rel="noreferrer">
+            <img src="https://github.com/sum35h/sumesh-pradhan-site/actions/workflows/test.yml/badge.svg" alt="Run Tests" />
+          </a>
+        </div>
+        
         <h1 className="text-4xl font-bold flex items-center gap-4">
           <span className="text-white">Hello, I&apos;m Sumesh</span>
         </h1>
