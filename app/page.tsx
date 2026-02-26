@@ -67,11 +67,11 @@ export default function HomePage() {
           </a>
 
         </div>
-        <div className="pt-2">
+        {/* <div className="pt-2">
           <a href="/resume.pdf" download className="matrix-link text-gray-300">
             Download Resume (PDF)
           </a>
-        </div>
+        </div> */}
         {/* <VisitorCounter /> */}
       </section>
 
