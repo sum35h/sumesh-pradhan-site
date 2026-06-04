@@ -80,6 +80,25 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             "Site Reliability Engineering"
           ]
         }) }} />
+        {/* Google Analytics */}
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className="min-h-screen antialiased bg-black text-green-400">
         <MatrixRain />
