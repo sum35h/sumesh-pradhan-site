@@ -31,5 +31,7 @@ variable "cloudfront_price_class" {
 variable "tags" {
   description = "Additional tags to apply to resources"
   type        = map(string)
-  default     = {}
+  default     = {
+    "IAC" = "Terraform"
+  }
 }
